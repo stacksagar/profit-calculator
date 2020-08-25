@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanila JS Project</title>
+    <link rel="stylesheet" href="files/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-dark">
+
+    <div id="main" class="container">
+        <div class="row">
+
+            <div class="col-md-6 mx-auto mt-2">
+                <div class="card card-body">
+                    <h3 class="heading text-center pb-3"> Percentage Calculator </h3>
+
+                    <form id="form">
+                        <div class="form-group">
+
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">$</span>
+                                </div>
+                                <input id="perMonth" type="number" placeholder="Per Month" class="form-control ">
+                            </div>
+
+                            <div class="input-group mt-2">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Years</span>
+                                </div>
+                                <input id="years" type="number" placeholder="Years to Pay" class="form-control ">
+                            </div>
+
+                            <div class="input-group mt-2">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"> Profit</span>
+                                </div>
+                                <input id="profit" type="number" placeholder="Profilt" class="form-control ">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">%</span>
+                                </div>
+                            </div>
+
+
+                            <br>
+                            <input id="calculate" type="submit" value="Calculate" class="btn btn-dark btn-block">
+
+                        </div>
+                    </form>
+
+                    <!-- Loading -->
+                    <div id="loading" class=" text-center my-4 ">
+                        <img style="width:50px;" src="files/loading.gif" alt="">
+                    </div> 
+                    
+                    <div id="result">
+                        <h3 class="text-center">Results</h3>
+                        <br>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Total Amount:</span>
+                            </div>
+                            <input id="tAmount" class="form-control" disabled>
+                        </div>
+
+                        <div class="input-group my-2">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Your Profit:</span>
+                            </div>
+                            <input id="Yrevenue" class="form-control" disabled><div class="input-group-prepend">
+                                <span class="input-group-text">%</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+
+    <script src="app.js"></script>
+</body>
+
+</html>

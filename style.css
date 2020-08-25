@@ -1,0 +1,10 @@
+#main{
+    transform:scale(1);
+}
+input.form-control,.btn{
+    display: block !important;
+    border-radius:5px;
+}
+#loading,#result{
+    display:none;
+}
